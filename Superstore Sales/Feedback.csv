@@ -1,0 +1,31 @@
+
+
+
+=> SCHEMA
+- Pas de raison pour flocon -> Faire en étoile
+    + Le flocon diminue la performance dû à la complexité de requêtes
+    + L'analyse risque d'être compromise lors de filtrages dû à la normalisation et aux multiples liaisons
+
+- Créer les colonnes dans Power Query plutôt que DAX
+    + Règle générale : La transformation des données se fait le plus tôt possible dans la chaîne décisionnelle
+    + Meilleure performance dû à la réalisation de calcul préalables dans Power Query (préparation des données)
+    + Mémoire optimisée dû à la compression des données lors du chargement dans le modèle
+
+- Masquer les colonnes qui ne seront pas utilisées par l'utilisateur
+
+
+
+=> MESURES
+- Créer une table pour les mesures
+- Inclure des indicateurs en valeur relative (%)
+- Inclure des indicateurs sur la rotation des stocks
+
+
+
+=> RAPPORT DESIGN
+- Faire un peu d'espace entre les graphique pour faire respirer le rapport
+- Utiliser des ombres moins marquées
+- Mettre les segments en liste déroulante pour gagner de l'espace sur le rapport
+- Titres explicites pour tous les graphiques
+- Visuel pour montrer aux utilisateurs la date de denière actualisation
+- Mettre l'année en légende sur les visuels permettant de suivre l'évolution mensuelle afin de comparer les annéess
